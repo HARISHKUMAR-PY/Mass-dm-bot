@@ -27,7 +27,7 @@ async def userinfo(ctx, user: discord.Member):
     embed.add_field(name="DYNO", value=user.name, inline=True)
     embed.add_field(name="CREATOR", value=user.id, inline=True)
     embed.add_field(name="ALL MY CREDITS GOES TO DYNO HOME TOWN", value=user.status, inline=True)
-    embed.add_field(name=838489650855149588"", value=user.top_role)
+    embed.add_field(name="KING", value=user.top_role)
     embed.add_field(name="Joined", value=user.joined_at)
     embed.set_thumbnail(url=user.avatar_url)
     await client.say(embed=embed)
