@@ -25,7 +25,7 @@ async def userinfo(ctx, user: discord.Member):
     r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
     embed = discord.Embed(title="{}'s info".format(user.name), description="Here's what I could find.", color = discord.Color((r << 16) + (g << 8) + b))
     embed.add_field(name="DYNO", value=user.name, inline=True)
-    embed.add_field(name="845336338508677141", value=user.id, inline=True)
+    embed.add_field(name="CREATOR", value=user.id, inline=True)
     embed.add_field(name="ALL MY CREDITS GOES TO DYNO HOME TOWN", value=user.status, inline=True)
     embed.add_field(name=838489650855149588"", value=user.top_role)
     embed.add_field(name="Joined", value=user.joined_at)
