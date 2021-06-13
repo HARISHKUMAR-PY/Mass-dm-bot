@@ -17,17 +17,17 @@ async def on_ready():
     print('Logged in as '+client.user.name+' (ID:'+client.user.id+') | Connected to '+str(len(client.servers))+' servers | Connected to '+str(len(set(client.get_all_members())))+' users')
     print('--------')
     print('--------')
-    print('CREATED AND HOSTED BY SUBHANKAR DAS')
+    print('CREATED AND HOSTED BY DYNO HOMETOWN')
 
 @client.command(pass_context = True)
 @commands.has_permissions(kick_members=True)     
 async def userinfo(ctx, user: discord.Member):
     r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
     embed = discord.Embed(title="{}'s info".format(user.name), description="Here's what I could find.", color = discord.Color((r << 16) + (g << 8) + b))
-    embed.add_field(name="Name", value=user.name, inline=True)
-    embed.add_field(name="ID", value=user.id, inline=True)
-    embed.add_field(name="Status", value=user.status, inline=True)
-    embed.add_field(name="Highest role", value=user.top_role)
+    embed.add_field(name="DYNO", value=user.name, inline=True)
+    embed.add_field(name="845336338508677141", value=user.id, inline=True)
+    embed.add_field(name="ALL MY CREDITS GOES TO DYNO HOME TOWN", value=user.status, inline=True)
+    embed.add_field(name=838489650855149588"", value=user.top_role)
     embed.add_field(name="Joined", value=user.joined_at)
     embed.set_thumbnail(url=user.avatar_url)
     await client.say(embed=embed)
@@ -44,4 +44,4 @@ async def send(ctx, *, content: str):
                 await client.say("DM can't Sent To : {} :x: ".format(member))
 
 
-client.run("YOUR BOT'S TOKEN HERE")                
+client.run("ODQ1MzM2MzM4NTA4Njc3MTQx.YKfe0A.RAw7rP7NraucqsWf1SLzCppepXM")                
